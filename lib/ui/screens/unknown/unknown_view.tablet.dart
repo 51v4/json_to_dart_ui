@@ -1,7 +1,9 @@
+import 'package:flutter/material.dart';
+
+import 'package:stacked/stacked.dart';
+
 import '../../common/app_colors.dart';
 import '../../common/ui_helpers.dart';
-import 'package:flutter/material.dart';
-import 'package:stacked/stacked.dart';
 
 import 'unknown_viewmodel.dart';
 
@@ -11,7 +13,7 @@ class UnknownViewTablet extends ViewModelWidget<UnknownViewModel> {
   @override
   Widget build(BuildContext context, UnknownViewModel viewModel) {
     return const Scaffold(
-      backgroundColor: kcBackgroundColor,
+      backgroundColor: Palette.background,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

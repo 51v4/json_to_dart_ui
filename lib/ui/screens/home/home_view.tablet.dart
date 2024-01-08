@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:stacked/stacked.dart';
 
+import 'components/header.dart';
 import 'home_viewmodel.dart';
 
 class HomeViewTablet extends ViewModelWidget<HomeViewModel> {
@@ -10,22 +11,11 @@ class HomeViewTablet extends ViewModelWidget<HomeViewModel> {
   @override
   Widget build(BuildContext context, HomeViewModel viewModel) {
     return const Scaffold(
-      body: Center(
-        child: SizedBox.expand(
+      body: SizedBox.expand(
+        child: SingleChildScrollView(
           child: Column(
             children: [
-              Placeholder(),
-              Placeholder(),
-              Placeholder(),
-              Placeholder(),
-              Placeholder(),
-              Placeholder(),
-              Placeholder(),
-              Placeholder(),
-              Placeholder(),
-              Placeholder(),
-              Placeholder(),
-              Placeholder(),
+              HeaderWidget(),
             ],
           ),
         ),

@@ -8,6 +8,7 @@ import 'app/app.bottomsheets.dart';
 import 'app/app.dialogs.dart';
 import 'app/app.locator.dart';
 import 'app/app.router.dart';
+import 'ui/common/app_colors.dart';
 import 'ui/common/app_constants.dart';
 
 Future<void> main() async {
@@ -32,6 +33,16 @@ class MainApp extends StatelessWidget {
         routerDelegate: stackedRouter.delegate(),
         routeInformationParser: stackedRouter.defaultRouteParser(),
         title: ksAppTitle,
+        theme: ThemeData(
+          primarySwatch: generateMaterialColor(Palette.primary),
+          scaffoldBackgroundColor: Palette.background,
+          useMaterial3: false,
+          appBarTheme: const AppBarTheme(
+            backgroundColor: Palette.background,
+            iconTheme: IconThemeData(color: Colors.black),
+            systemOverlayStyle: kcSystemUiOverlayLight,
+          ),
+        ),
       ),
     ).animate().fadeIn(delay: delay, duration: duration);
   }

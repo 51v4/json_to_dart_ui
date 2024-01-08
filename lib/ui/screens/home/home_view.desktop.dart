@@ -4,6 +4,7 @@ import 'package:stacked/stacked.dart';
 
 import '../../common/app_constants.dart';
 
+import 'components/header.dart';
 import 'home_viewmodel.dart';
 
 class HomeViewDesktop extends ViewModelWidget<HomeViewModel> {
@@ -12,25 +13,17 @@ class HomeViewDesktop extends ViewModelWidget<HomeViewModel> {
   @override
   Widget build(BuildContext context, HomeViewModel viewModel) {
     return const Scaffold(
-      body: Center(
-        child: SizedBox(
-          width: kdDesktopMaxContentWidth,
-          height: kdDesktopMaxContentHeight,
-          child: Column(
-            children: [
-              Placeholder(),
-              Placeholder(),
-              Placeholder(),
-              Placeholder(),
-              Placeholder(),
-              Placeholder(),
-              Placeholder(),
-              Placeholder(),
-              Placeholder(),
-              Placeholder(),
-              Placeholder(),
-              Placeholder(),
-            ],
+      body: SizedBox.expand(
+        child: SingleChildScrollView(
+          child: Center(
+            child: SizedBox(
+              width: kdDesktopMaxContentWidth,
+              child: Column(
+                children: [
+                  HeaderWidget(),
+                ],
+              ),
+            ),
           ),
         ),
       ),

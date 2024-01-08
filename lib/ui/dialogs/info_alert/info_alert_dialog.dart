@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import '../../common/app_colors.dart';
-import '../../common/ui_helpers.dart';
+
 import 'package:stacked/stacked.dart';
 import 'package:stacked_services/stacked_services.dart';
+
+import '../../common/ui_helpers.dart';
 
 import 'info_alert_dialog_model.dart';
 
@@ -48,8 +49,6 @@ class InfoAlertDialog extends StackedView<InfoAlertDialogModel> {
                       verticalSpaceTiny,
                       Text(
                         request.description!,
-                        style:
-                            const TextStyle(fontSize: 14, color: kcMediumGrey),
                         maxLines: 3,
                         softWrap: true,
                       ),
