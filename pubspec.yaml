@@ -14,6 +14,12 @@ dependencies:
   url_strategy: ^0.2.0
   responsive_builder: ^0.7.0
   flutter_animate: ^4.1.1+1
+  json_editor: ^0.0.8
+  json_to_dart:
+    git:
+      url: https://github.com/51v4/json_to_dart.git
+      ref: custom_helper
+  selectable_code_view: ^0.0.1
 
 dev_dependencies:
   build_runner: ^2.4.5

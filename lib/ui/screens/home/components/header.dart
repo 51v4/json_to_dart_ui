@@ -11,10 +11,10 @@ class HeaderWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 30),
-      child: const Column(
+      child: Column(
         children: [
           verticalSpaceLarge,
-          Text(
+          const Text(
             "JSON to Dart",
             textAlign: TextAlign.center,
             style: TextStyle(
@@ -24,7 +24,7 @@ class HeaderWidget extends StatelessWidget {
             ),
           ),
           verticalSpaceMedium,
-          Text(
+          const Text(
             "Paste your JSON in the textarea below, click convert and get your Dart classes for free.",
             textAlign: TextAlign.center,
             style: TextStyle(
@@ -33,7 +33,7 @@ class HeaderWidget extends StatelessWidget {
               color: Colors.white,
             ),
           ),
-          verticalSpaceMassive,
+          verticalSpace(40),
         ],
       ),
     );

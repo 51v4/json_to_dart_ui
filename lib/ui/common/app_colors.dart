@@ -10,6 +10,9 @@ abstract class Palette {
   ///0xFF000000
   static const Color background = Color(0xFF000000);
 
+  ///0xFF000000
+  static const Color background1E = Color(0xFF1E1E1E);
+
   ///Error
   static const Color error = Color.fromARGB(255, 218, 52, 40);
 }

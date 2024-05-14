@@ -35,14 +35,13 @@ class MainApp extends StatelessWidget {
         title: ksAppTitle,
         theme: ThemeData(
           primarySwatch: generateMaterialColor(Palette.primary),
-          scaffoldBackgroundColor: Palette.background,
-          useMaterial3: false,
-          appBarTheme: const AppBarTheme(
-            backgroundColor: Palette.background,
-            iconTheme: IconThemeData(color: Colors.black),
-            systemOverlayStyle: kcSystemUiOverlayLight,
-          ),
+          scaffoldBackgroundColor: Colors.white,
         ),
+        darkTheme: ThemeData(
+          primarySwatch: generateMaterialColor(Palette.primary),
+          scaffoldBackgroundColor: Palette.background,
+        ),
+        themeMode: ThemeMode.dark,
       ),
     ).animate().fadeIn(delay: delay, duration: duration);
   }

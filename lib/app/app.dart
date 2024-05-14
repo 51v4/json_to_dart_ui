@@ -20,6 +20,7 @@ import '../ui/sheets/notice/notice_sheet.dart';
   dependencies: [
     LazySingleton(classType: BottomSheetService),
     LazySingleton(classType: DialogService),
+    LazySingleton(classType: SnackbarService),
     LazySingleton(classType: RouterService),
     // @stacked-service
   ],
